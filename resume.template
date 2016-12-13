@@ -10,6 +10,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
       {{{css}}}
+      {{{print}}}
     </style>
   </head>
   <body>
@@ -26,14 +27,18 @@
           <ul class="pull-right">
             <li>{{email}}</li>
             <li>{{phone}}</li>
+          {{#if profiles.length}}
             <li>
               {{#each profiles}}
               <i class="fa fa-{{toLowerCase network}}"></i> {{username}}
               {{/each}}
             </li>
+          {{/if}}
           </ul>
         </div>
       </div>
+
+    {{#resume.basics}}
       <hr style="margin-top: 0;" />
 
       <!-- Profile/summary -->
@@ -47,6 +52,7 @@
         {{/resume.basics}}
       </div>
       <hr />
+    {{/resume.basics}}
 
       <!-- Skills -->
       <div class="row">

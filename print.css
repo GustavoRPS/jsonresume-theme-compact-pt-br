@@ -1,0 +1,5 @@
+@media print{
+  body > div > div:nth-child(7) .row:nth-of-type(n+11) {
+    display: none;
+  }
+}
