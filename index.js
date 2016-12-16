@@ -1,6 +1,7 @@
 var fs = require('fs');
 var Handlebars = require('handlebars');
 var Moment = require('moment');
+Moment.locale('pt-BR');
 
 function render(resume) {
   var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
@@ -17,7 +18,7 @@ function render(resume) {
 
 Handlebars.registerHelper("prettifyDate", function(resumeDate) {
   if (!resumeDate) {
-    return 'Present';
+    return 'Atualmente';
   }
   var newDate = Moment(resumeDate).format('MMM YYYY');
   console.log('newDate: ' + newDate);
