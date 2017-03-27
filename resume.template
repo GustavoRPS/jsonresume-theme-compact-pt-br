@@ -44,7 +44,7 @@
       <!-- Profile/summary -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Profile </h4>
+          <h4 class="section-title"> Sobre</h4>
         </div>
         <div class="col-xs-10">
           {{summary}}
@@ -57,7 +57,7 @@
       <!-- Skills -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Skills </h4>
+          <h4 class="section-title"> Habilidades</h4>
         </div>
         <div class="col-xs-10">
           {{#each resume.skills}}
@@ -78,7 +78,7 @@
       <!-- Experience -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Experience </h4>
+          <h4 class="section-title"> Experiência</h4>
         </div>
         <div class="col-xs-10">
           {{#each resume.work}}
@@ -110,14 +110,14 @@
       <!-- Education -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Education </h4>
+          <h4 class="section-title"> Educação </h4>
         </div>
         <div class="col-xs-10">
           {{#each resume.education}}
           <div class="row education-section">
             <div class="col-xs-10">
               <div class="school"> {{institution}} </div>
-              <i class="fa fa-graduation-cap"></i> {{studyType}} in {{area}}
+              <i class="fa fa-graduation-cap"></i> {{studyType}} em {{area}}
             </div>
             <div class="col-xs-2">
               <div class="pull-right">
