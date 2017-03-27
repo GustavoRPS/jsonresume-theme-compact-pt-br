@@ -1,12 +1,12 @@
 {
-  "name": "jsonresume-theme-compact",
+  "name": "jsonresume-theme-compact-pt-br",
   "version": "1.0.4",
-  "description": "A JSON Resume theme for a compact look",
+  "description": "A JSON Resume theme for a compact look in portuguese (brazil)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alan Ward",
+  "author": "@GustavoRPS",
   "license": "MIT",
   "dependencies": {
     "handlebars": "^2.0.0-alpha.4",
@@ -14,13 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arw180/jsonresume-theme-compact.git"
+    "url": "https://github.com/gustavorps/jsonresume-theme-compact-pt-br.git"
   },
   "keywords": [
     "json", "jsonresume", "theme", "compact"
   ],
   "bugs": {
-    "url": "https://github.com/arw180/jsonresume-theme-compact/issues"
+    "url": "https://github.com/gustavorps/jsonresume-theme-compact-pt-br/issues"
   },
-  "homepage": "https://github.com/arw180/jsonresume-theme-compact"
+  "homepage": "https://github.com/gustavorps/jsonresume-theme-compact-pt-br"
 }
