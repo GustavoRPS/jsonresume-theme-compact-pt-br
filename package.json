@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-compact-pt-br",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A JSON Resume theme for a compact look in portuguese (brazil)",
   "main": "index.js",
   "scripts": {

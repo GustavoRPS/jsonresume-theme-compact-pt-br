@@ -41,10 +41,10 @@
     {{#resume.basics}}
       <hr style="margin-top: 0;" />
 
-      <!-- Profile/summary -->
+      <!-- Sobre -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Sobre</h4>
+          <h4 class="section-title">Sobre</h4>
         </div>
         <div class="col-xs-10">
           {{summary}}
@@ -75,10 +75,10 @@
       </div>
       <hr />
 
-      <!-- Experience -->
+      <!-- Experiência -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Experiência</h4>
+          <h4 class="section-title">Experiência</h4>
         </div>
         <div class="col-xs-10">
           {{#each resume.work}}
@@ -107,10 +107,10 @@
       </div>
       <hr />
 
-      <!-- Education -->
+      <!-- Educação -->
       <div class="row">
         <div class="col-xs-2">
-          <h4 class="section-title"> Educação </h4>
+          <h4 class="section-title">Educação</h4>
         </div>
         <div class="col-xs-10">
           {{#each resume.education}}
@@ -123,6 +123,37 @@
               <div class="pull-right">
                 {{prettifyDate endDate}}
               </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+
+      <!-- Voluntariado -->
+      <div class="row">
+        <div class="col-xs-2">
+          <h4 class="section-title">Voluntariado</h4>
+        </div>
+        <div class="col-xs-10">
+          {{#each resume.volunteer}}
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="company"> {{organization}} </div>
+              <div class="company-position"><em>{{position}}</em></div>
+            </div>
+            <div class="col-xs-6">
+              <span class="pull-right"> {{prettifyDate startDate}} -
+                {{prettifyDate endDate}} </span>
+            </div>
+          </div>
+          <div class="row company-description">
+            <div class="col-xs-12">
+              <ul>
+                <li class="company-summary">{{summary}}</li>
+                {{#each highlights}}
+                <li><i class="fa fa-chevron-circle-right"></i> {{this}}</li>
+                {{/each}}
+              </ul>
             </div>
           </div>
           {{/each}}
